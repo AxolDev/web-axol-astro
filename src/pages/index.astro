@@ -1,0 +1,147 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeroImage from "../components/HeroImage.astro";
+import BlogCard from "../components/BlogCard.astro";
+import ServiceCard from "../components/ServiceCard.astro";
+---
+
+<Layout title="">
+	<div class="grid md:grid-cols-2 gap-4 col-span-5 px-5 py-16" id="hero">
+		<div
+			class="flex flex-col justify-center items-start order-last md:order-first"
+		>
+			<h3 class="text-4xl font-semibold mb-5">Simplifique su negocio</h3>
+			<h5 class="text-2xl font-normal mb-3">
+				Descubra cómo podemos transformar su empresa.
+			</h5>
+			<p class="text-lg text-neutral-500">
+				Nuestra pasión radica en simplificar y mejorar los procesos
+				empresariales a través de soluciones tecnológicas de vanguardia.
+				Trabajamos incansablemente para brindar simplicidad y calidad en
+				todo lo que hacemos.
+			</p>
+			<button
+				class="my-4 py-2 px-9 bg-blue-700 rounded-xl text-sm text-white hover:bg-blue-800 transition duration-300 ease-in-out block"
+				>Explore nuestros servicios</button
+			>
+		</div>
+		<div>
+			<picture class="flex justify-end w-full">
+				<img src="hero.svg" alt="">
+			</picture>
+		</div>
+	</div>
+
+	<section class="bg-gradient-to-b from-transparent to-white">
+		<div class="grid md:grid-cols-3 grid-cols-1 gap-5 items-stretch p-5">
+			<!-- <img src="30576515_7702554.svg" class="object-cover object-center w-full h-96 rounded-xl" alt=""> -->
+			<BlogCard
+				title="Mejora la Productividad de tu equipo de ventas con un CRM."
+				description="Una relación estrecha con los clientes, es de las cosas más importantes de toda empresa. Si no existe este vínculo positivo, existen mayores probabilidades de que a mediano o largo plazo se convierta en una amenaza."
+				image="30576515_7702554.svg"
+				link="/blog/que-es-un-erp"
+				colspan="md:col-span-2"
+			/>
+			<BlogCard
+				title="¿Quieres impulsar tu negocio?"
+				description="Contactanos para ayudarte a encontrar la mejor solución para tu negocio."
+				image="analysis.svg"
+				link="/blog/que-es-un-erp"
+			/>
+		</div>
+	</section>
+
+	<section
+		class="grid md:grid-cols-3 lg:grid-cols-4 px-5 py-10 bg-white gap-5"
+	>
+		<div class="md:col-span-3 lg:col-span-4">
+			<h4 class="text-3xl font-semibold mb-3">—— Nuestros Servicios</h4>
+		</div>
+		<ServiceCard
+			title="Desarrollo Web"
+			description="Creamos sitios web atractivos y funcionales totalmente responsive, que se adaptan a sus necesidades comerciales."
+			image="development.svg"
+		/>
+
+		<ServiceCard
+			title="Landings"
+			description="Diseñamos páginas de destino efectivas para maximizar el impacto de sus campañas de marketing."
+			image="landing.svg"
+		/>
+
+		<ServiceCard
+			title="Tiendas en Línea"
+			description="Desarrollamos plataformas de comercio electrónico robustas y seguras para impulsar sus ventas en línea."
+			image="ecommerce.svg"
+		/>
+
+		<ServiceCard
+			title="Apps Móviles"
+			description="Creamos aplicaciones móviles personalizadas para llegar a su audiencia en dispositivos móviles."
+			image="mobileapp.svg"
+		/>
+
+		<ServiceCard
+			title="Automatizaciones"
+			description="Optimizamos sus operaciones empresariales mediante la automatización de tareas repetitivas y la mejora de la eficiencia."
+			image="autom.svg"
+		/>
+
+		<ServiceCard
+			title="Aplicaciones Web"
+			description="Desarrollamos aplicaciones web a medida para abordar sus desafíos empresariales específicos."
+			image="webapps.svg"
+		/>
+
+		<ServiceCard
+			title="Email Marketing"
+			description="Llegue a su audiencia de manera efectiva a través de correos electrónicos masivos personalizados y atractivos."
+			image="email.svg"
+		/>
+		<ServiceCard
+			title="SMS Masivos"
+			description="Amplíe su alcance y comunique mensajes importantes de manera rápida y efectiva con nuestro servicio de SMS Masivo."
+			image="sms.svg"
+		/>
+	</section>
+
+	<section class="grid md:grid-cols-2 gap-5 px-5 py-5 bg-white">
+		<div
+			class="rounded-xl p-7 bg-neutral-100 flex flex-col justify-between"
+		>
+			<div>
+				<h4 class="text-2xl font-semibold mb-3">
+					Dominio, hosting o correos empresariales
+				</h4>
+				<span class="italic font-semibold text-lg"
+					>Convierte lo complicado, a un proceso fácil y sencillo.</span
+				>
+				<p class="font-light">
+					Ofrecemos una gama completa de servicios de dominios, hosting y correos empresariales para satisfacer todas tus necesidades tecnológicas. Ya sea que estés buscando registrar un nuevo dominio, alojar tu sitio web o configurar correos electrónicos empresariales, estamos aquí para brindarte soluciones efectivas.
+				</p>
+			</div>
+			<button
+				class="mt-4 mb-3 py-2 px-2 rounded-xl text-xs border-2 border-black transition duration-300 ease-in-out block hover:bg-black hover:text-white w-full"
+				>Más información</button
+			>
+		</div>
+
+		<div
+			class="rounded-xl p-7 bg-neutral-100 flex flex-col justify-between"
+		>
+			<div>
+				<h4 class="text-2xl font-semibold mb-3">Consultoría</h4>
+				<span class="italic font-semibold text-lg"
+					>¿Necesitas una integración o actualización en tus sistemas?</span
+				>
+				<p class="font-light">
+					Te ofrecemos servicios de consultoría en desarrollo de software para abordar tus necesidades específicas. Nuestro equipo de expertos en tecnología está listo para ayudarte a realizar trabajos pendientes, apoyar a tus empleados de software y llevar a cabo actualizaciones esenciales en tus sistemas.
+				</p>
+			</div>
+			<button
+				class="mt-4 mb-3 py-2 px-2 rounded-xl text-xs border-2 border-black transition duration-300 ease-in-out block hover:bg-black hover:text-white w-full"
+				>Más información</button
+			>
+		</div>
+	</section>
+</Layout>
